@@ -17,18 +17,29 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- <link href="css/main.css" rel="stylesheet"> -->
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <div>
-    <header class="">
+    <header>
       <nav class="navbar bg-dark navbar-expand-lg fixed-top sticky mx-auto">
         <div class="container">
           <a class="navbar-brand me-4" href="./index.html">
-            <img src="./images/wordmark.svg" alt="" />
+            <img class="logo" src="./images/wordmark.svg" alt="" />
           </a>
-          <div class="navbar-header"></div>
+          <div class="navbar-header">
+            <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+              aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="#fff"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                </path>
+              </svg>
+              <span class="d-none fs-6 pe-1">Browse</span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar ms-auto ">
               <li class="nav-item">
@@ -48,27 +59,13 @@
         </div>
       </nav>
     </header>
-    <!-- <header>
-      <div class="logo">
-        YANJUN'S SPACE
-      </div>
-      <nav class="nav main-nav">
-        <img src="./images/menu.svg" alt="" class="menu-img" />
-        <ul>
-          <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="#About">ABOUT</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Portfolio">PORTFOLIO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Contact">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header> -->
     <div class="container mx-auto">
       <section class="section-photo">
         <h2 id="About">About</h2>
         <div class="user-info">
           <div class="row">
             <div class="col-lg-9">
-              <h4 class="text-dark fw-light lh-base mt-5">
+              <h4 class="text-dark fs-16 text-muted mb-5 fw-light lh-base mt-2">
                 Hi, I'm a graphic designer in Toronto with a passion for branding. <br /> I excel in problem-solving and
                 believe
                 that
@@ -78,128 +75,147 @@
           </div>
         </div>
         <h2 id="Portfolio">Portfolio</h2>
-        <nav class="menu-nav">
-          <ul>
-            <li class="active">ALL</li>
-            <li>BRANDING</li>
-            <li>EDITORIAL</li>
-            <li>UI/UX DESIGN</li>
+        <nav class="menu-nav mt-5">
+          <ul class="nav nav-pills">
+            <li class="list-inline-item categories position-relative bg-dark my-sm-0 my-2 py-1 px-2 fw-bold rounded">
+              <a href="#" aria-current="page" class="text-white">
+                ALL
+              </a>
+            </li>
+            <li class="list-inline-item categories position-relative my-sm-0 my-2 py-1 px-2 fw-bold ">
+              <a href="#" class="text-dark">
+                BRANDING
+              </a>
+            </li>
+            <li class="list-inline-item categories position-relative my-sm-0 my-2 py-1 px-2 fw-bold ">
+              <a href="#" class="text-dark">
+                EDITORIAL
+              </a>
+            </li>
+            <li class="list-inline-item categories position-relative my-sm-0 my-2 py-1 px-2 fw-bold ">
+              <a href="#" class="text-dark">
+                UI/UX DESIGN
+              </a>
+            </li>
           </ul>
         </nav>
-        <div class="content">
-          <div class="left">
-            <a href="./gaboury_detai.html" class="card portfolio1">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>GABOURY</h5>
-                  <p>A Toronto-based fashion brand for local artist Jackson Gaboury.</p>
-                  <div class="review-btn">VIEW MORE</div>
+        <div class="row justify-content-center">
+          <div class="row shuffle">
+            <div class="left col-lg-4 col-md-6 col-12 spacing picture-item shuffle-item shuffle-item--visible">
+              <a href="./gaboury_detai.html" class="card portfolio1">
+                <div class="hover-box">
+                  <div class="center-box">
+                    <h5 class="text-white">GABOURY</h5>
+                    <p class="text-center text-white my-2">A Toronto-based fashion brand for local artist Jackson Gaboury.</p>
+                    <div class="text-dark bg-white rounded-pill p-3 d-inline-block fw-bold">VIEW MORE</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="./hey_detai.html" class="card portfolio2">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>Hey！</h5>
-                  <p>A brand to make meaningful connections between seniors and young volunteers.</p>
-                  <div class="review-btn">VIEW MORE</div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 spacing picture-item shuffle-item shuffle-item--visible">
+              <a href="./hey_detai.html" class="card portfolio2">
+                <div class="hover-box">
+                  <div class="center-box">
+                    <h5>Hey！</h5>
+                    <p class="text-center text-white my-2">A brand to make meaningful connections between seniors and young volunteers.</p>
+                    <div class="text-dark bg-white rounded-pill p-3 d-inline-block fw-bold">VIEW MORE</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="./tao_detail.html" class="card portfolio5">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>Tao</h5>
-                  <p>Poster series for taoism.</p>
-                  <div class="review-btn">VIEW MORE</div>
+              </a>
+            </div>
+            <div class="center col-lg-4 col-md-6 col-12 spacing picture-item shuffle-item shuffle-item--visible">
+              <a href="./u_detail.html" class="card portfolio3">
+                <div class="hover-box">
+                  <div class="center-box">
+                    <h5>U</h5>
+                    <p class="text-center text-white my-2">A unisex magazine designed for local artist Jackson Gaboury.</p>
+                    <div class="text-dark bg-white rounded-pill p-3 d-inline-block fw-bold">VIEW MORE</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="center">
-            <a href="./u_detail.html" class="card portfolio3">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>U</h5>
-                  <p>A unisex magazine designed for local artist Jackson Gaboury.</p>
-                  <div class="review-btn">VIEW MORE</div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 spacing picture-item shuffle-item shuffle-item--visible">
+              <a href="./ux_design_detail.html" class="card portfolio4">
+                <div class="hover-box">
+                  <div class="center-box">
+                    <h5>Tims</h5>
+                    <p class="text-center text-white my-2">Tim Hortons mobile app improvement.</p>
+                    <div class="text-dark bg-white rounded-pill p-3 d-inline-block fw-bold">VIEW MORE</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="./ux_design_detail.html" class="card portfolio4">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>Tims</h5>
-                  <p>Tim Hortons mobile app improvement.</p>
-                  <div class="review-btn">VIEW MORE</div>
+              </a>
+            </div>
+            <div class="right col-lg-4 col-md-6 col-12 spacing picture-item shuffle-item shuffle-item--visible">
+              <a href="./tao_detail.html" class="card portfolio5">
+                <div class="hover-box">
+                  <div class="center-box">
+                    <h5>Tao</h5>
+                    <p class="text-center text-white my-2">Poster series for taoism.</p>
+                    <div class="text-dark bg-white rounded-pill p-3 d-inline-block fw-bold">VIEW MORE</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="./hey_app_detail.html" class="card portfolio6">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>Hey！</h5>
-                  <p>Hey! is an innovative crowdfunding platform dedicated to improving the lives of seniors.</p>
-                  <div class="review-btn">VIEW MORE</div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 spacing picture-item shuffle-item shuffle-item--visible">
+              <a href="./hey_app_detail.html" class="card portfolio6">
+                <div class="hover-box">
+                  <div class="center-box">
+                    <h5>Hey！</h5>
+                    <p class="text-center text-white my-2">Hey! is an innovative crowdfunding platform dedicated to improving the lives of seniors.</p>
+                    <div class="text-dark bg-white rounded-pill p-3 d-inline-block fw-bold">VIEW MORE</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="right">
-            <a href="./tao_detail.html" class="card portfolio5">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>Tao</h5>
-                  <p>Poster series for taoism.</p>
-                  <div class="review-btn">VIEW MORE</div>
-                </div>
-              </div>
-            </a>
-            <a href="./hey_app_detail.html" class="card portfolio6">
-              <div class="hover-box">
-                <div class="center-box">
-                  <h5>Hey！</h5>
-                  <p>Hey! is an innovative crowdfunding platform dedicated to improving the lives of seniors.</p>
-                  <div class="review-btn">VIEW MORE</div>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section class="section-contact">
         <h2 id="Contact">Contact</h2>
-        <div class="form">
-          <div class="left-info">
-            <div class="info-item">
-              <div class="info-value">lyanjun985@gmail.com</div>
-            </div>
-            <div class="info-item">
-              <div class="info-value">+14168711361</div>
-            </div>
-            <div class="info-item">
-              <div class="info-value">Toronto, ON</div>
-            </div>
+        <div class="row form">
+          <div class="col-lg-4 mt-5 left-info">
+            <div class="fs-5 fw-bold">lyanjun985@gmail.com</div>
+            <div class="fs-5 fw-bold">+14168711361</div>
+            <div class="fs-5 fw-bold">Toronto, ON</div>
           </div>
-          <form action="post" action="#" class="contact-form">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your email">
-            <input class="btn" type="submit" value="SEND AWAY">
-          </form>
+          <div class="col-lg-8 mt-5">
+            <form action="post" action="#">
+              <div class="form-floating mb-4 border rounded border-dark">
+                <input type="email" class="form-control" id="Name" placeholder="Your name">
+                <label for="Name">Your name</label>
+              </div>
+              <div class="form-floating mb-4 border rounded border-dark">
+                <input type="email" class="form-control" id="Email" placeholder="Your email">
+                <label for="Email">Your email</label>
+              </div>
+              <input type="submit" id="submit" name="send" class="bg-dark py-2 submitBnt btn btn-primary rounded"
+                value="SEND AWAY">
+            </form>
+          </div>
         </div>
       </section>
     </div>
-    <footer>
-      <!-- <div class="footer-logo">YANJUN'S SPACE</div> -->
-      <nav>
-        <ul class="footer-social">
-          <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-        </ul>
-      </nav>
-      <p>Copyright YANJUN'S SPACE 2024</p>
+    <footer class="bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <nav>
+                <ul class="list-inline social-circle mt-3">
+                  <li class="list-inline-item"><a href="#"><i
+                        class="fs-2 text-white fa-brands fa-square-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i
+                        class="fs-2 text-white fa-brands fa-square-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i
+                        class="fs-2 text-white fa-brands fa-square-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fs-2 text-white fa-brands fa-tiktok"></i></a></li>
+                </ul>
+              </nav>
+              <p class="text-white-50">Copyright YANJUN'S SPACE 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 </body>

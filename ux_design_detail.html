@@ -16,24 +16,47 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Main CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/detail.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
+  <div>
     <header>
-      <div class="logo">
-        YANJUN'S SPACE
-      </div>
-      <nav class="main-nav">
-        <img src="./images/menu.svg" alt="" class="menu-img" />
-        <ul>
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
+      <nav class="navbar bg-dark navbar-expand-lg fixed-top sticky mx-auto">
+        <div class="container">
+          <a class="navbar-brand me-4" href="./index.html">
+            <img class="logo" src="./images/wordmark.svg" alt="" />
+          </a>
+          <div class="navbar-header">
+            <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+              aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="#fff" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                </path>
+              </svg>
+              <span class="d-none fs-6 pe-1">Browse</span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar ms-auto ">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link text-white">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#About" class="nav-link text-white">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Portfolio" class="nav-link text-white">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a href="#Contact" class="nav-link text-white">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <section class="section-info ux_design">
@@ -41,30 +64,40 @@
       <p>Tim Hortons mobile app improvement.</p>
     </section>
     <div class="photo-content">
-      <img class="photo" src="./images/portfolio4/1.png" alt="">
-      <img class="photo" src="./images/portfolio4/2.png" alt="">
-      <img class="photo" src="./images/portfolio4/3.png" alt="">
-      <img class="photo" src="./images/portfolio4/4.png" alt="">
-      <img class="photo" src="./images/portfolio4/5.png" alt="">
-      <img class="photo" src="./images/portfolio4/6.png" alt="">
-      <img class="photo" src="./images/portfolio4/7.png" alt="">
-      <img class="photo" src="./images/portfolio4/8.png" alt="">
-      <img class="photo" src="./images/portfolio4/9.png" alt="">
-      <img class="photo" src="./images/portfolio4/10.png" alt="">
+      <img class="photo" src="./images/portfolio_4/1.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/2.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/3.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/4.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/5.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/6.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/7.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/8.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/9.svg" alt="">
+      <img class="photo" src="./images/portfolio_4/10.svg" alt="">
     </div>
-    <footer>
-      <div class="footer-logo">YANJUN'S SPACE</div>
-      <nav>
-        <ul class="footer-social">
-          <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-        </ul>
-      </nav>
-      <p>Copyright YANJUN'S SPACE 2024</p>
-    </footer>
   </div>
+  <footer class="bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <nav>
+              <ul class="list-inline social-circle mt-3">
+                <li class="list-inline-item"><a href="#"><i
+                      class="fs-2 text-white fa-brands fa-square-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i
+                      class="fs-2 text-white fa-brands fa-square-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i
+                      class="fs-2 text-white fa-brands fa-square-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fs-2 text-white fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </nav>
+            <p class="text-white-50">Copyright YANJUN'S SPACE 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
